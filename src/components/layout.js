@@ -67,8 +67,8 @@ const Layout = ({ children }) => {
       >
         <main css={css`
             margin: 2rem auto 4rem;
-            maxWidth: 90vw;
-            width:550px;
+            // maxWidth: 90vw;
+            // width:550px;
           `}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

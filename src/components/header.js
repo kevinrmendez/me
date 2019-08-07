@@ -6,7 +6,7 @@ import React from "react"
 
 const NavLink = styled(Link)`
   color:white;
-  font-size:18px;
+  font-size:27px;
   font-weight: ${props => props.fontWeight || 'normal'};
   line-height:1;
   padding: 0.25rem;
@@ -42,7 +42,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </NavLink>
-        <NavLink to="/page-2" activeClassName="current-page">page2 </NavLink>
+        <NavLink to="/about-me" activeClassName="current-page">about me </NavLink>
       </h1>
     </nav>
   </header>

@@ -9,12 +9,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Front end Developer</h1>
-    
+
     <p style={{fontSize:40, textAlign:`center`}}>I am Kevin and I am a front end developer</p>
     <div style={{ maxWidth: `700px`, marginBottom: `1.45rem`, margin:`0 auto` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+  
   </Layout>
 )
 
