@@ -54,6 +54,9 @@ const Layout = ({ children }) => {
             margin-top: 0.5rem;
           }
         }
+        .text-big {
+          font-size:40px;
+        }
       `} />
       <Header siteTitle={data.site.siteMetadata.title} />
 
