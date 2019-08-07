@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import {css} from "@emotion/core"
 import styled from "@emotion/styled"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 export const data = graphql`
 query {
   placeholderImage: file(relativePath: { eq: "git.png" }) {
@@ -28,6 +29,7 @@ const AboutMe = ({data}) => (
     <Img
       fixed={data.placeholderImage.childImageSharp.fixed} />
     </a>
+
   </Layout>
 )
 

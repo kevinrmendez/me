@@ -57,6 +57,12 @@ const Layout = ({ children }) => {
         .text-big {
           font-size:40px;
         }
+        h1 {
+          color: rebeccapurple;
+          font-size: 50px;
+          text-align: center;
+          margin-top: 10%;
+        }
       `} />
       <Header siteTitle={data.site.siteMetadata.title} />
 

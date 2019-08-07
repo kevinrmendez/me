@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import {css} from "@emotion/core"
 import styled from "@emotion/styled"
 import React from "react"
-
-const NavLink = styled(Link)`
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+const NavLink = styled(AniLink)`
   color:white;
   font-size:27px;
   font-weight: ${props => props.fontWeight || 'normal'};
@@ -36,13 +36,13 @@ const Header = ({ siteTitle }) => (
       padding: 0.5rem calc((100vw-55px)/2)
     `}>
       <h1 style={{ margin: 0 }}>
-        <NavLink fontWeight="bold"
+        <NavLink paintDrip color="rebeccapurple"  fontWeight="bold"
           to="/"
           activeClassName="current-page"
         >
           {siteTitle}
         </NavLink>
-        <NavLink to="/about-me" activeClassName="current-page">about me </NavLink>
+        <NavLink  cover  bg="#663399" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
       </h1>
     </nav>
   </header>
