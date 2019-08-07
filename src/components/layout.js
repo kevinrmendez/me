@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import {Global, css} from '@emotion/core'
+
 import Header from "./header"
 import "./layout.css"
 
@@ -25,7 +27,36 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <Global styles={css`
+        *{
+          box-sizing:border-box;
+          margin:0;
+
+        }
+        /* * + * {
+          margin-top:1rem;
+        } */
+        html,
+        body{
+          color: #555;
+          font-size:18px;
+          line-height: 1.4;
+        }
+        > div{
+          margin-top:0;
+        }
+        h1,
+        h2,
+        h3 {
+          line-height: 1.1;
+          color: #222;
+          + * {
+            margin-top: 0.5rem;
+          }
+        }
+      `} />
       <Header siteTitle={data.site.siteMetadata.title} />
+
       <div
         style={{
           margin: `0 auto`,
@@ -34,7 +65,11 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main css={css`
+            margin: 2rem auto 4rem;
+            maxWidth: 90vw;
+            width:550px;
+          `}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

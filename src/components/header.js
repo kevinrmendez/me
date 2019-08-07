@@ -1,33 +1,50 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import {css} from "@emotion/core"
+import styled from "@emotion/styled"
 import React from "react"
 
+const NavLink = styled(Link)`
+  color:white;
+  font-size:18px;
+  font-weight: ${props => props.fontWeight || 'normal'};
+  line-height:1;
+  padding: 0.25rem;
+  margin: 0 0.5rem 0 0;
+  text-decoration:none;
+
+  &.current-page{
+    border-bottom:2px solid #fff;
+  }
+  &:last-of-type {
+    margin-right:0;
+  }
+`;
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    css={css`
+      background: rebeccapurple;
+      margin-bottom: 1.45rem;
+      `}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <nav css={css`
+      margin: 0 auto;
+      max-width:960px;
+      padding: 1.45rem 1.0875rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem calc((100vw-55px)/2)
+    `}>
       <h1 style={{ margin: 0 }}>
-        <Link
+        <NavLink fontWeight="bold"
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          activeClassName="current-page"
         >
           {siteTitle}
-        </Link>
+        </NavLink>
+        <NavLink to="/page-2" activeClassName="current-page">page2 </NavLink>
       </h1>
-    </div>
+    </nav>
   </header>
 )
 
