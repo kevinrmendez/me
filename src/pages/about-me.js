@@ -57,18 +57,17 @@ const AboutMe = ({data}) => (
     </Col>
 
     </Row>
-    <Row className="section text-center">
+    <Row className=" text-center">
       <Col justify="center" >
-          <h2>Are you looking for a front end/web developer?</h2>
-          <p css={css`font-size:25px;`}>Send me an email and let's talk more about your project</p>
-          <Button href="mailto:kevinrmendez" value="send email"/>
+          <h2 css={css`font-size:60px; line-height:1.5`}>Are you looking for a front end/web developer?</h2>
+          <p css={css`font-size:50px;`}>Contact me</p>
+          <p css={css`font-size:25px;`}>Send me a message and let's talk more about your project</p>
       </Col>
     </Row>
     <Row>
-    <Col>
-    <Form />
-    </Col>
-
+      <Col>
+        <Form />
+      </Col>
     </Row>
     </Container>
   </Layout>

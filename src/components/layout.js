@@ -110,6 +110,19 @@ const Layout = ({ children }) => {
           transition: .4s;
           color: #fff;
         }
+        form input[type="text"],
+        form input[type="email"],
+        textarea{
+          max-width:500px;
+          margin:0 auto;
+          display: block;
+          width:100%;
+          margin-bottom: 1.5em;
+          color: var(--bg-blue);
+          font-size: 20px;
+          padding: 8px 17px;
+        }
+
       `}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
