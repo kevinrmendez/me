@@ -8,7 +8,8 @@ const inputStyle = {
   fontSize: '23px',
   borderRadius: '40px',
   background: 'var(--yellow)',
-  color: '#fff'
+  color: '#fff',
+  cursor:"pointer",
 }
 
 

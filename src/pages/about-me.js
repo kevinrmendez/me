@@ -10,8 +10,10 @@ import {css} from "@emotion/core"
 import styled from "@emotion/styled"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Icon from "../assets/git.svg"
+import jsLogo from "../images/js.png"
+import dartLogo from "../images/dart.png"
+import nodeLogo from "../images/node.png"
 import { Container, Row, Col } from 'react-grid-system'
-
 
 
 
@@ -26,7 +28,9 @@ query {
   }
 }
 `
-
+const IconWeb =styled.img`
+    max-width:100px;
+`;
 const AboutMe = ({data}) => (
   <Layout>
     <SEO title="About me" />
@@ -36,12 +40,25 @@ const AboutMe = ({data}) => (
 
 
     <Container>
+    <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >Stack</h3>
+    <Row justify="center" >
+    <Col className="text-center">
+    <IconWeb src={jsLogo} />
+    </Col>
+    <Col className="text-center">
+    <IconWeb src={dartLogo} />
+    </Col>
+    <Col className="text-center">
+    <IconWeb src={nodeLogo} />
+    </Col>
+    </Row>
+      <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >Check also</h3>
     <Row justify="center" className="section ">
     <Col className="text-center">
     <h3 className="white">Github</h3>
     <a href={"https://github.com/kevinrmendez"}>
       <Icon css={css`
-            max-width:170px;
+            max-width:180px;
             background: #fff;
             height:auto;
             border-radius: 50%;
@@ -56,13 +73,18 @@ const AboutMe = ({data}) => (
     </a>
     </Col>
 
+
+    </Row>
+    <Row>
+    <Col>
+    <Button href="/contact" value="get in touch"/>
+
+    </Col>
     </Row>
     </Container>
   </Layout>
 )
 
-const Logo = ()=> {
 
-}
 
 export default AboutMe

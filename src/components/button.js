@@ -18,7 +18,7 @@ const Button = (props) => {
 
   return <a className="button" css={css`
     background: #fff;
-    max-width: 200px;
+    max-width: 350px;
     color: var(--bg-blue);
     font-size: 23px;
     padding: 10px 45px;
@@ -27,7 +27,7 @@ const Button = (props) => {
     margin: 0 auto;
     display: block;
     text-align: center;
-    min-width: 215px;
+    /* min-width: 215px; */
     `}  href={props.href}  >
         {props.value}
     </a>

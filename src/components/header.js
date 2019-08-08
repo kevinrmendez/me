@@ -14,7 +14,8 @@ const NavLink = styled(AniLink)`
   text-decoration:none;
 
   &.current-page{
-    border-bottom:2px solid #fff;
+    color: var(--yellow);
+    border-bottom:2px solid var(--yellow);
   }
   &:last-of-type {
     margin-right:0;
@@ -29,22 +30,22 @@ const Header = ({ siteTitle }) => (
   >
   <nav css={css`
       margin: 0 auto;
-      max-width:960px;
+      max-width:760px;
       padding: 1.45rem 1.0875rem;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem calc((100vw-55px)/2)
     `}>
-      <h1 style={{ margin: 0 }}>
-        <NavLink paintDrip hex="#EEC643"  fontWeight="bold"
+    <NavLink  cover  bg="#EEC643" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
+    <NavLink className="site-title" paintDrip hex="#EEC643"  fontWeight="bold"
           to="/"
           activeClassName="current-page"
         >
           {siteTitle}
         </NavLink>
-        <NavLink  cover  bg="#EEC643" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
+
           <NavLink paintDrip hex="#EEC643" to="/contact" activeClassName="current-page">contact </NavLink>
-      </h1>
+
     </nav>
   </header>
 )

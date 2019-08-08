@@ -69,6 +69,11 @@ const Layout = ({ children }) => {
         p {
           color: var(--white);
         }
+        a{
+          &:not(.site-title){
+            line-height: 40px;
+          }
+        }
         .text-big {
           font-size:40px;
         }
@@ -78,7 +83,8 @@ const Layout = ({ children }) => {
           color: var(--yellow);
           font-size: 50px;
           text-align: center;
-          margin-top: 10%;
+          margin-top: 5%;
+          margin-bottom:10%;
 
         }
         header {
@@ -110,6 +116,10 @@ const Layout = ({ children }) => {
           transition: .4s;
           color: #fff;
         }
+        a.site-title {
+          text-transform: uppercase;
+          font-size: 40px;
+        }
         form input[type="text"],
         form input[type="email"],
         textarea{
@@ -128,6 +138,19 @@ const Layout = ({ children }) => {
             font-size:40px;
           }
         }
+          @media only screen and (max-width: 600px) {
+            nav{
+              flex-direction:column;
+            }
+            a{
+              &.site-title {
+                font-size:27px;
+                text-transform:lowercase;
+              }
+              &.current-page{
+                border-bottom:none !important;
+              }
+            }
       `}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
