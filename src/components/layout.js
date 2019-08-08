@@ -86,6 +86,11 @@ const Layout = ({ children }) => {
           padding-bottom: 20px;
           border-bottom: 5px solid var(--yellow);
         }
+        footer a,
+        footer p {
+          color: var(--white);
+          font-size:16px;
+        }
       `} />
       <Header siteTitle={data.site.siteMetadata.title} />
 
@@ -102,10 +107,15 @@ const Layout = ({ children }) => {
             // maxWidth: 90vw;
             // width:550px;
           `}>{children}</main>
-        <footer>
+        <footer css={css`
+            text-align:center;
+          `}>
+          <p>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
+          <p>kevinrmendez</p>
         </footer>
       </div>
     </>

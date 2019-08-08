@@ -7,9 +7,10 @@ import Img from "gatsby-image"
 import {css} from "@emotion/core"
 import styled from "@emotion/styled"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Icon from "../assets/git.svg"
 export const data = graphql`
 query {
-  placeholderImage: file(relativePath: { eq: "git.png" }) {
+   file(relativePath: { eq:"in2.png" }) {
     childImageSharp {
       fixed(width: 170, height: 170) {
         ...GatsbyImageSharpFixed
@@ -26,9 +27,18 @@ const AboutMe = ({data}) => (
     <p class="text-big">I like to learn about new technologies </p>
     <p> Here you can check my github</p>
     <a href="https://github.com/kevinrmendez">
-    <Img
-      fixed={data.placeholderImage.childImageSharp.fixed} />
+      <Icon css={css`
+            max-width:170px;
+            background: #fff;
+            height:auto;
+            border-radius: 50%;
+            padding: 9px;
+        `} />
     </a>
+    <a href="https://www.linkedin.com/in/kevin-mendez-45723692/">
+      <Img fixed={data.file.childImageSharp.fixed} />
+    </a>
+
 
   </Layout>
 )
