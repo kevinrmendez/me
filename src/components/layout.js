@@ -88,7 +88,10 @@ const Layout = ({ children }) => {
           line-height: 1.5;
           padding-bottom: 20px;
           border-bottom: 5px solid var(--yellow);
-          min-height: 205px;
+
+        }
+        main .front-page  h1{
+            min-height: 205px;
         }
         footer a,
         footer p {

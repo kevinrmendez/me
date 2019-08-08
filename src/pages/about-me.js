@@ -33,8 +33,8 @@ const AboutMe = ({data}) => (
 
 
     <Container>
-    <Row justify="center">
-    <Col>
+    <Row justify="center" className="section ">
+    <Col className="text-center">
     <h3 className="white">Github</h3>
     <a href={"https://github.com/kevinrmendez"}>
       <Icon css={css`
@@ -46,7 +46,7 @@ const AboutMe = ({data}) => (
         `} />
     </a>
     </Col>
-    <Col>
+    <Col  className="text-center">
     <h3 className="white">Linkedin</h3>
     <a href={"https://www.linkedin.com/in/kevin-mendez-45723692/"}>
       <Img fixed={data.file.childImageSharp.fixed} />
