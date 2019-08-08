@@ -24,9 +24,14 @@ const Button = (props) => {
     padding: 10px 45px;
     border-radius: 24px;
     text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-width: 215px;
     `}  href={props.href}  >
         {props.value}
     </a>
+
 }
 
 export default Button

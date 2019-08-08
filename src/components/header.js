@@ -43,6 +43,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </NavLink>
         <NavLink  cover  bg="#EEC643" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
+          <NavLink paintDrip hex="#EEC643" to="/contact" activeClassName="current-page">contact </NavLink>
       </h1>
     </nav>
   </header>
