@@ -23,7 +23,7 @@ const NavLink = styled(AniLink)`
 const Header = ({ siteTitle }) => (
   <header
     css={css`
-      background: rebeccapurple;
+      /* background: rebeccapurple; */
       margin-bottom: 1.45rem;
       `}
   >
@@ -36,13 +36,13 @@ const Header = ({ siteTitle }) => (
       padding: 0.5rem calc((100vw-55px)/2)
     `}>
       <h1 style={{ margin: 0 }}>
-        <NavLink paintDrip color="rebeccapurple"  fontWeight="bold"
+        <NavLink paintDrip hex="#EEC643"  fontWeight="bold"
           to="/"
           activeClassName="current-page"
         >
           {siteTitle}
         </NavLink>
-        <NavLink  cover  bg="#663399" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
+        <NavLink  cover  bg="#EEC643" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
       </h1>
     </nav>
   </header>

@@ -36,11 +36,19 @@ const Layout = ({ children }) => {
         /* * + * {
           margin-top:1rem;
         } */
+        :root {
+          --blue: #2301AD;
+          --yellow: #EEC643;
+          --bg-blue: #1600C1;
+          --white: #FFF;
+        }
         html,
         body{
           color: #555;
           font-size:18px;
           line-height: 1.4;
+          background-color: var(--bg-blue);
+
         }
         > div{
           margin-top:0;
@@ -54,14 +62,29 @@ const Layout = ({ children }) => {
             margin-top: 0.5rem;
           }
         }
+        p {
+          color: var(--white);
+        }
         .text-big {
           font-size:40px;
         }
+
         h1 {
-          color: rebeccapurple;
+          /* color: rebeccapurple; */
+          color: var(--yellow);
           font-size: 50px;
           text-align: center;
           margin-top: 10%;
+
+        }
+        header {
+          background-color: var(--bg-blue);
+        }
+        main h1{
+          font-size: 60px;
+          line-height: 1.5;
+          padding-bottom: 20px;
+          border-bottom: 5px solid var(--yellow);
         }
       `} />
       <Header siteTitle={data.site.siteMetadata.title} />
