@@ -64,8 +64,9 @@ const AboutMe = ({data}) => (
     </Row>
     <Row>
     <Col>
-    <form name="contact" method="POST" etlify-honeypot="bot-field" data-netlify="true">
-    <p css={css`display:none;`} class="hidden">
+    <form name="contact" method="post" action="/success"  data-netlify="true"
+    data-netlify-honeypot="bot-field">
+    <p  class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
 <p>
