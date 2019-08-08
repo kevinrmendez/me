@@ -8,7 +8,7 @@ import TypeWriter from "../components/typewriter"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    
+
     <TypeWriter className="front-page" title="Kevin Mendez Front End Developer!" speed={110}/>
 
 
@@ -22,11 +22,11 @@ const IndexPage = () => (
       border-radius: 74px;
       position: absolute;
       left: 48%;
-      top: 500px;
+      top: 470px;
       z-index: 1;
       max-width: 400px;
       font-size: 30px;
-      padding: 23px;
+      padding: 40px;
 
 }
       `

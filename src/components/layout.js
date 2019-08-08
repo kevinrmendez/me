@@ -31,6 +31,7 @@ const Layout = ({ children }) => {
         *{
           box-sizing:border-box;
           margin:0;
+          font-family:'Open Sans'
 
         }
         /* * + * {

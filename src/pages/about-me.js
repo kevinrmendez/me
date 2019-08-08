@@ -9,7 +9,8 @@ import {css} from "@emotion/core"
 import styled from "@emotion/styled"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Icon from "../assets/git.svg"
-import { Container, Row, Col } from 'react-grid-system';
+import { Container, Row, Col } from 'react-grid-system'
+
 
 
 export const data = graphql`
@@ -60,6 +61,31 @@ const AboutMe = ({data}) => (
           <p css={css`font-size:25px;`}>Send me an email and let's talk more about your project</p>
           <Button href="mailto:kevinrmendez" value="send email"/>
       </Col>
+    </Row>
+    <Row>
+    <Col>
+    <form name="contact" method="POST" data-netlify="true">
+<p>
+<label>Your Name: <input type="text" name="name" /></label>
+</p>
+<p>
+<label>Your Email: <input type="email" name="email" /></label>
+</p>
+<p>
+<label>Your Role: <select name="role[]" multiple>
+  <option value="leader">Leader</option>
+  <option value="follower">Follower</option>
+</select></label>
+</p>
+<p>
+<label>Message: <textarea name="message"></textarea></label>
+</p>
+<p>
+<button type="submit">Send</button>
+</p>
+</form>
+    </Col>
+
     </Row>
     </Container>
   </Layout>
