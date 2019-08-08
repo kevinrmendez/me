@@ -13,6 +13,7 @@ const IndexPage = () => (
 
 
 
+
     <p css={
       css`
       font-size: 40px;
@@ -42,11 +43,6 @@ const IndexPage = () => (
 left: 0;
 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 transform: rotate(210deg);
-
-
-
-
-
       `
     } />
     I am a front end developer living in Finland</p>

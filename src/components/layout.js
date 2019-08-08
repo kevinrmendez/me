@@ -123,6 +123,11 @@ const Layout = ({ children }) => {
           padding: 8px 17px;
         }
 
+        @media only screen and (max-width: 768px) {
+          main h1 {
+            font-size:40px;
+          }
+        }
       `}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
