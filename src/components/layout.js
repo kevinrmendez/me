@@ -57,10 +57,13 @@ const Layout = ({ children }) => {
         h2,
         h3 {
           line-height: 1.1;
-          color: #222;
+          color: var(--yellow);
           + * {
             margin-top: 0.5rem;
           }
+        }
+        .white {
+          color:var(--white) !important;
         }
         p {
           color: var(--white);
@@ -85,13 +88,26 @@ const Layout = ({ children }) => {
           line-height: 1.5;
           padding-bottom: 20px;
           border-bottom: 5px solid var(--yellow);
+          min-height: 205px;
         }
         footer a,
         footer p {
           color: var(--white);
           font-size:16px;
         }
-      `} />
+        .section {
+          margin:100px 0;
+        }
+        .text-center {
+          text-align: center;
+        }
+        .button:hover {
+          background: var(--yellow);
+          transition: .4s;
+          color: #fff;
+        }
+      `}
+      />
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <div

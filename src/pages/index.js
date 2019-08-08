@@ -48,7 +48,7 @@ transform: rotate(210deg);
 
       `
     } />
-    I am maste degree student in software development in Oulu University</p>
+    I am a front end developer living in Finland</p>
 
 
     <div css={css`
