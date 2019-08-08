@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Button from "../components/button"
+import Form from "../components/form"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import {css} from "@emotion/core"
@@ -10,6 +11,7 @@ import styled from "@emotion/styled"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Icon from "../assets/git.svg"
 import { Container, Row, Col } from 'react-grid-system'
+
 
 
 
@@ -64,24 +66,7 @@ const AboutMe = ({data}) => (
     </Row>
     <Row>
     <Col>
-    <form name="contact" method="post" action="/success"  data-netlify="true"
-    data-netlify-honeypot="bot-field">
-    <p  class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
-<p>
-<label>Your Name: <input type="text" name="name" /></label>
-</p>
-<p>
-<label>Your Email: <input type="email" name="email" /></label>
-</p>
-<p>
-<label>Message: <textarea name="message"></textarea></label>
-</p>
-<p>
-<button type="submit">Send</button>
-</p>
-</form>
+    <Form />
     </Col>
 
     </Row>
