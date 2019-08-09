@@ -6,6 +6,7 @@ import Image from "../components/image"
 import Dialog from "../components/dialog"
 import SEO from "../components/seo"
 import TypeWriter from "../components/typewriter"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />

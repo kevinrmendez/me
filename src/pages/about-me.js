@@ -19,15 +19,15 @@ import meSnow from "../images/meSnow.jpg"
 import reactJS from "../images/react.png"
 import reduxJS from "../images/redux.png"
 import vueJS from "../images/vue.png"
-
+import gitIcon from "../assets/git.svg"
+import linkedin from "../images/in.png"
 import { Container, Row, Col } from 'react-grid-system'
 import posed from 'react-pose';
 
 
-
 export const data = graphql`
 query {
-   file(relativePath: { eq:"in2.png" }) {
+   file(relativePath: { eq:"in.png" }) {
     childImageSharp {
       fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
@@ -36,15 +36,66 @@ query {
   }
 }
 `
+const Box = posed.div({
+  hoverable:true,
+  init: {
+    scale:1,
+  },
+  hover: {
+    scale: 1.1,
+     transition: { duration: 400 }
+  }
+})
+
 const IconWeb =styled.img`
     max-width:100px;
 `;
-
+const IconLink =(props) => (
+  <Box className={props.class}>
+  <a href={props.href}>
+    <Icon css={css`
+          max-width:100px;
+          background: #fff;
+          height:auto;
+          border-radius: 50%;
+          padding: 9px;
+      `} />
+  </a>
+  </Box>
+)
 const ImgLink = (props) => (
+  <Box className={props.class}>
   <a href={props.href}>
     <img src={props.src} />
   </a>
+  </Box>
 )
+
+const Flag = ()=> (
+  <div css={css`
+    &{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-row-gap: 30px;
+      grid-column-gap: 30px;
+      height: 150px;
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+    & div {
+        background: #fff;
+    }
+
+    `} >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+
+)
+
 
 const AboutMe = ({data}) => (
   <Layout>
@@ -53,18 +104,13 @@ const AboutMe = ({data}) => (
     <p class="text-big text-center">
     I am a master degree student in Software Engineering at Oulu University in my last year of my studies
     </p>
-    <ImgLink href="https://www.oulu.fi/university/masters/gs3d" src={uni} />
+    <ImgLink class="img-250" href="https://www.oulu.fi/university/masters/gs3d" src={uni} />
     <p class="text-big text-center">
     I have worked as a front end developer for 1 year at liana technologies,
     but also I have done freelance projects for small companies in Finland
     </p>
-    <div className="finnish-flag">
-    <div />
-    <div />
-    <div />
-    <div />
-    </div>
-    <p class="text-big text-center">I enjoy to participate in Hackathons, so far I have won 2 times in a row at Junction</p>
+    <Flag />
+    <p class="text-big text-center">I enjoy to participate in Hackathons, I have won 2 times at Junction</p>
 
     <img css={css`max-width:300px;`} src={junction2016} />
     <div css={css`display:none;`}>
@@ -122,21 +168,11 @@ const AboutMe = ({data}) => (
       </Col>
     <Col className="text-center">
     <h3 className="white">Github</h3>
-    <a href={"https://github.com/kevinrmendez"}>
-      <Icon css={css`
-            max-width:100px;
-            background: #fff;
-            height:auto;
-            border-radius: 50%;
-            padding: 9px;
-        `} />
-    </a>
+    <IconLink class="img-100" href="https://github.com/kevinrmendez" />
     </Col>
     <Col  className="text-center">
     <h3 className="white">Linkedin</h3>
-    <a href={"https://www.linkedin.com/in/kevin-mendez-45723692/"}>
-      <Img fixed={data.file.childImageSharp.fixed} />
-    </a>
+      <ImgLink class="img-100" href="https://www.linkedin.com/in/kevin-mendez-45723692/" src={linkedin} />
     </Col>
 
 

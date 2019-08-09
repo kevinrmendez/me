@@ -37,13 +37,7 @@ const Layout = ({ children }) => {
         /* * + * {
           margin-top:1rem;
         } */
-        :root {
-          --blue: #2301AD;
-          --yellow: #EEC643;
-          --bg-blue: #1600C1;
-          --white: #FFF;
-          --dark-blue: #04034B;
-        }
+
         html,
         body{
           color: #555;
@@ -115,6 +109,8 @@ const Layout = ({ children }) => {
         }
         .button:hover {
           background: var(--yellow);
+          box-shadow: 0 10px 8px 0 rgba(0,0,0,1);
+
           transition: .4s;
           color: #fff;
         }

@@ -18,6 +18,14 @@ const Dialog = (props) => {
     font-size: 30px;
     padding: 40px;
     /* min-width: 215px; */
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+          margin-right: 12px;
+          padding: 31px 0px;
+          top: 405px;
+          width: 75%;
+          left: 28px;
+    }
     `}  >
     <span css={
       css`

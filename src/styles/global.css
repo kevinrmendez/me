@@ -1,20 +1,21 @@
-.finnish-flag {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-row-gap: 30px;
-  grid-column-gap: 30px;
-  height: 150px;
-  max-width: 300px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  }
-  .finnish-flag div {
-      background: #fff;
-  }
-  @media only screen and (max-width: 768px) {
-
-
+/* colors variables */
+:root {
+  --blue: #2301AD;
+  --yellow: #EEC643;
+  --bg-blue: #1600C1;
+  --white: #FFF;
+  --dark-blue: #04034B;
 }
+
+  .img-100 {
+    max-width: 100px;
+    margin:0 auto;
+  }
+  .img-250 {
+    max-width: 250px;
+    margin:0 auto;
+  }
+  @media only screen and (max-width: 768px) {}
 @media only screen and (max-width: 600px) {
   nav {
         padding: 25px 5px;
@@ -22,13 +23,5 @@
   img.codingLogo {
         width: 60vw;
         margin: 50px auto;
-  }
-  p.dialog {
-    font-size: 20px;
-        margin-right: 12px;
-        padding: 31px 0px;
-        top: 405px;
-        width: 75%;
-        left: 28px;
   }
 }
