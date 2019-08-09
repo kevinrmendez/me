@@ -75,6 +75,7 @@ const AboutMe = ({data}) => (
     play with  my girlfriend's cats and and learn new web technologies</p>
         <img css={css`max-width:600px;width:100%;`} src={meSnow} />
 
+
     <Container>
 
     <Row justify="center" className="section" >
