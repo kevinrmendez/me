@@ -140,8 +140,6 @@ const Layout = ({ children }) => {
         }
 
 
-
-
         @media only screen and (max-width: 768px) {
           main h1 {
             font-size:40px;
