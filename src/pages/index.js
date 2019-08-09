@@ -27,7 +27,6 @@ const IndexPage = () => (
       max-width: 360px;
       font-size: 30px;
       padding: 40px;
-
 }
       `
     }>
