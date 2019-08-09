@@ -159,6 +159,7 @@ const Layout = ({ children }) => {
                 border-bottom:none !important;
               }
             }
+        }
       `}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -172,9 +173,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main css={css`
-            margin: 2rem auto 4rem;
-            // maxWidth: 90vw;
-            // width:550px;
+            margin: 150px auto 4rem;
           `}>{children}</main>
         <footer css={css`
             text-align:center;
@@ -187,6 +186,7 @@ const Layout = ({ children }) => {
           <p>kevinrmendez</p>
         </footer>
       </div>
+
     </>
   )
 }
