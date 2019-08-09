@@ -34,7 +34,7 @@ const AboutMe = ({data}) => (
     <h1>Are you looking for a front end/web developer?</h1>
 
 
-    <img className="wobble-hor-bottom" css={css`
+    <img className="codingLogo wobble-hor-bottom" css={css`
       background: white;
     max-width: 300px;
     margin: 0 auto;

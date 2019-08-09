@@ -27,6 +27,7 @@ const Button = (props) => {
     margin: 0 auto;
     display: block;
     text-align: center;
+    margin-bottom: 25px;
     /* min-width: 215px; */
     `}  href={props.href}  >
         {props.value}

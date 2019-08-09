@@ -1,0 +1,23 @@
+.finnish-flag {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  height: 150px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  }
+  .finnish-flag div {
+      background: #fff;
+  }
+
+@media only screen and (max-width: 600px) {
+  nav {
+        padding: 25px 5px;
+  }
+  img.codingLogo {
+        width: 60vw;
+        margin: 50px auto;
+  }
+}

@@ -42,6 +42,7 @@ const Layout = ({ children }) => {
           --yellow: #EEC643;
           --bg-blue: #1600C1;
           --white: #FFF;
+          --dark-blue: #04034B;
         }
         html,
         body{
@@ -138,7 +139,7 @@ const Layout = ({ children }) => {
           font-weight:bold;
         }
 
-  
+
 
 
         @media only screen and (max-width: 768px) {

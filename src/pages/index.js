@@ -24,7 +24,7 @@ const IndexPage = () => (
       left: 48%;
       top: 470px;
       z-index: 1;
-      max-width: 400px;
+      max-width: 360px;
       font-size: 30px;
       padding: 40px;
 
