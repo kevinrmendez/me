@@ -16,6 +16,9 @@ import nodeLogo from "../images/node.png"
 import junction2016 from "../images/junction_2016.jpg"
 import uni from "../images/oulu_uni.png"
 import meSnow from "../images/meSnow.jpg"
+import reactJS from "../images/react.png"
+import reduxJS from "../images/redux.png"
+import vueJS from "../images/vue.png"
 
 import { Container, Row, Col } from 'react-grid-system'
 import posed from 'react-pose';
@@ -26,7 +29,7 @@ export const data = graphql`
 query {
    file(relativePath: { eq:"in2.png" }) {
     childImageSharp {
-      fixed(width: 170, height: 170) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
@@ -70,7 +73,7 @@ const AboutMe = ({data}) => (
 
     <p class="text-big text-center">When I am not coding, I like to travel,
     play with  my girlfriend's cats and and learn new web technologies</p>
-        <img css={css`max-width:600px;`} src={meSnow} />
+        <img css={css`max-width:600px;width:100%;`} src={meSnow} />
 
     <Container>
 
@@ -91,6 +94,27 @@ const AboutMe = ({data}) => (
     <IconWeb src={nodeLogo} />
     </Col>
     </Row>
+
+    <Row justify="center" className="section" >
+    <Col sm={12}>
+    <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >JS frameworks</h3>
+    </Col>
+    <Col    className="text-center">
+        <h3 className="white">React</h3>
+    <IconWeb src={reactJS} />
+    </Col>
+    <Col    className="text-center">
+        <h3 className="white">Redux</h3>
+    <IconWeb src={reduxJS} />
+    </Col>
+
+    <Col   className="text-center">
+        <h3 className="white">Vue</h3>
+    <IconWeb src={vueJS} />
+    </Col>
+
+    </Row>
+
     <Row justify="center" className="section">
       <Col sm={12}>
         <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >Check also</h3>
@@ -99,7 +123,7 @@ const AboutMe = ({data}) => (
     <h3 className="white">Github</h3>
     <a href={"https://github.com/kevinrmendez"}>
       <Icon css={css`
-            max-width:180px;
+            max-width:100px;
             background: #fff;
             height:auto;
             border-radius: 50%;
@@ -112,7 +136,6 @@ const AboutMe = ({data}) => (
     <a href={"https://www.linkedin.com/in/kevin-mendez-45723692/"}>
       <Img fixed={data.file.childImageSharp.fixed} />
     </a>
-
     </Col>
 
 
