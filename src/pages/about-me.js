@@ -67,10 +67,10 @@ const AboutMe = ({data}) => (
     <p class="text-big text-center">I enjoy to participate in Hackathons, so far I have won 2 times in a row at Junction</p>
 
     <img css={css`max-width:300px;`} src={junction2016} />
-
-    <p class="text-big text-center"> I have also built a react native app of my girlfriends's cat Kuismelo</p>
+    <div css={css`display:none;`}>
+    <p  class="text-big text-center"> I have also built a react native app of my girlfriends's cat Kuismelo</p>
     <Button href="https://github.com/kevinrmendez/cat-caller" value="Download from Git" />
-
+    </div>
     <p class="text-big text-center">When I am not coding, I like to travel,
     play with  my girlfriend's cats and and learn new web technologies</p>
         <img css={css`max-width:600px;width:100%;`} src={meSnow} />
