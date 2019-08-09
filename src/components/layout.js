@@ -86,6 +86,9 @@ const Layout = ({ children }) => {
         header {
           background-color: var(--bg-blue);
         }
+        main {
+              margin: 150px auto 4rem;
+        }
         main h1{
           font-size: 60px;
           line-height: 1.5;
@@ -172,9 +175,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main css={css`
-            margin: 150px auto 4rem;
-          `}>{children}</main>
+        <main>{children}</main>
         <footer css={css`
             text-align:center;
           `}>

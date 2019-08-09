@@ -44,6 +44,9 @@
       display: none;
     flex-direction: column;
     }
+      .nav-links a.current-page {
+        border-bottom:none;
+    }
     .nav-links .site-title {
       display: none;
       }
