@@ -11,7 +11,10 @@
   .finnish-flag div {
       background: #fff;
   }
+  @media only screen and (max-width: 768px) {
 
+
+}
 @media only screen and (max-width: 600px) {
   nav {
         padding: 25px 5px;
@@ -19,5 +22,13 @@
   img.codingLogo {
         width: 60vw;
         margin: 50px auto;
+  }
+  p.dialog {
+    font-size: 20px;
+        margin-right: 12px;
+        padding: 31px 0px;
+        top: 405px;
+        width: 75%;
+        left: 28px;
   }
 }
