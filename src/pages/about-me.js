@@ -35,25 +35,33 @@ const AboutMe = ({data}) => (
   <Layout>
     <SEO title="About me" />
     <h1>About me</h1>
-    <p class="text-big text-center">When I am not developing websites, I like to go for a walk,
-    play with the cats of my girlfriend and learn about new web technologies</p>
+    <p class="text-big text-center">When I am not coding, I like to travel and
+    play with  my girlfriend's cats and and learn new web technologies</p>
 
 
     <Container>
+
+    <Row justify="center" className="section" >
+    <Col sm={12}>
     <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >Stack</h3>
-    <Row justify="center" >
+    </Col>
     <Col className="text-center">
+        <h3 className="white">Javascript</h3>
     <IconWeb src={jsLogo} />
     </Col>
     <Col className="text-center">
+        <h3 className="white">Dart</h3>
     <IconWeb src={dartLogo} />
     </Col>
     <Col className="text-center">
+        <h3 className="white">Nodejs</h3>
     <IconWeb src={nodeLogo} />
     </Col>
     </Row>
-      <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >Check also</h3>
-    <Row justify="center" className="section ">
+    <Row justify="center" className="section">
+      <Col sm={12}>
+        <h3 css={css`text-align:center;font-size:52px;font-weight:400;`} >Check also</h3>
+      </Col>
     <Col className="text-center">
     <h3 className="white">Github</h3>
     <a href={"https://github.com/kevinrmendez"}>

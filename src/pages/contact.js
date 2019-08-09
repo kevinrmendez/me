@@ -11,7 +11,7 @@ import styled from "@emotion/styled"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Icon from "../assets/git.svg"
 import { Container, Row, Col } from 'react-grid-system'
-
+import coderLogo from "../images/coding.png"
 
 
 
@@ -34,11 +34,20 @@ const AboutMe = ({data}) => (
     <h1>Are you looking for a front end/web developer?</h1>
 
 
+    <img className="wobble-hor-bottom" css={css`
+      background: white;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 56px;
+    border-radius: 32px;
+    `} src={coderLogo} alt="coding icon"/>
+
 
     <Container>
     <Row className=" text-center">
       <Col justify="center" >
-      <p css={css`font-size:50px;`}>Contact me</p>
+      <p css={css`font-size:50px;margin: 50px 0px;`}>Contact me</p>
       <p css={css`font-size:25px;`}>Send me a message and let's talk more about your project</p>
       </Col>
     </Row>

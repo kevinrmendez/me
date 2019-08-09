@@ -76,6 +76,7 @@ const Layout = ({ children }) => {
         }
         .text-big {
           font-size:40px;
+          line-height: 1.5;
         }
 
         h1 {
@@ -85,7 +86,7 @@ const Layout = ({ children }) => {
           text-align: center;
           margin-top: 5%;
           margin-bottom:10%;
-
+          font-family: 'Roboto Condensed', sans-serif;
         }
         header {
           background-color: var(--bg-blue);
@@ -132,16 +133,28 @@ const Layout = ({ children }) => {
           font-size: 20px;
           padding: 8px 17px;
         }
+        ::placeholder {
+          color:#000;
+          font-weight:bold;
+        }
+
+  
+
 
         @media only screen and (max-width: 768px) {
           main h1 {
             font-size:40px;
           }
+          .text-big {
+            font-size:27px;
+          }
         }
           @media only screen and (max-width: 600px) {
-            nav{
-              flex-direction:column;
+          nav {
+            a {
+              font-size:22px !important;
             }
+          }
             a{
               &.site-title {
                 font-size:27px;
