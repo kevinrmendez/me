@@ -3,6 +3,7 @@ module.exports = {
     title: `kevinrmendez`,
     description: `personal website`,
     author: `@kevinrmendez`,
+    siteUrl: `https://kevinrmendez.com`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
