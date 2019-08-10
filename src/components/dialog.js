@@ -12,7 +12,7 @@ const Dialog = (props) => {
     border-radius: 74px;
     position: absolute;
     left: 48%;
-    top: 300px;
+    top: 400px;
     z-index: 1;
     max-width: 360px;
     font-size: 30px;
