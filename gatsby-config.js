@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
