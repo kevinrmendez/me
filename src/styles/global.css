@@ -15,47 +15,13 @@
     max-width: 250px;
     margin:0 auto;
   }
-    .nav-links {
-      display: flex;
-    justify-content: space-around;
-    width:100%;
-    }
-  .nav-mobile {
-    width: 100%;
-    justify-content: inherit;
-    display:none;
-  }
+
   @media only screen and (max-width: 768px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      width: 100%;
-      z-index: 1;
-      background: var(--bg-blue);
-    }
     body main {
           margin-top: 150px;
     }
-    .nav-mobile {
-      display: flex;
-    }
-    .nav-links {
-      display: none;
-    flex-direction: column;
-    }
-      .nav-links a.current-page {
-        border-bottom:none;
-    }
-    .nav-links .site-title {
-      display: none;
-      }
-
   }
 @media only screen and (max-width: 600px) {
-  nav {
-        padding: 25px 5px;
-  }
   img.codingLogo {
         width: 60vw;
         margin: 50px auto;

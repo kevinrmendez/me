@@ -32,23 +32,16 @@ function Header ({siteTitle}) {
         margin-bottom: 1.45rem;
         `}
     >
-    <nav css={css`
-        margin: 0 auto;
-        max-width:760px;
-        padding: 1.45rem 1.0875rem;
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem calc((100vw-55px)/2)
-      `}>
+    <nav>
       <div  class="nav-mobile">
       <NavLink className="site-title" paintDrip hex="#EEC643"  fontWeight="bold"
             to="/" activeClassName="current-page">{siteTitle}
       </NavLink>
       <div onClick={() => setShow(!show)}>
-      <Menu  />
+      <Menu class={show ? "active": ""}  />
       </div>
       </div>
-      <div style={{display: show?"flex":"none"}} className="nav-links ">
+      <div style={{display: show?"flex":"flex"}} className= {show ? "nav-links active": "nav-links "} >
       <NavLink  cover  bg="#EEC643" duration={1} to="/about-me" activeClassName="current-page">about me </NavLink>
       <NavLink className="site-title" paintDrip hex="#EEC643"  fontWeight="bold"
             to="/"

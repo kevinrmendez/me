@@ -147,22 +147,15 @@ const Layout = ({ children }) => {
             font-size:27px;
           }
         }
-          @media only screen and (max-width: 600px) {
-          nav {
-            a {
-              font-size:22px !important;
-            }
-          }
             a{
               &.site-title {
-                font-size:27px;
-                text-transform:lowercase;
+                font-size:30px;
               }
               &.current-page{
                 border-bottom:none !important;
               }
             }
-        }
+          @media only screen and (max-width: 600px) {}
       `}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
