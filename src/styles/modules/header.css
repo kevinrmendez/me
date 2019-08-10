@@ -5,7 +5,8 @@ nav {
   padding: 1.45rem 1.0875rem;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw-55px)/2)
+  /* padding: 0.5rem calc((100vw-55px)/2) */
+  padding: 20px 0px;
 }
 
 .nav-links {
