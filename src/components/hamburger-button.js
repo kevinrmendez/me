@@ -1,10 +1,11 @@
-import React,  { useState } from "react"
-import {css} from "@emotion/core"
-
+import React, { useState } from "react"
+import { css } from "@emotion/core"
 
 function Menu(props) {
   return (
-    <div className={props.class}  css={css`
+    <div
+      className={props.class}
+      css={css`
         &{
           display: inline-block;
           cursor: pointer;
@@ -26,12 +27,12 @@ function Menu(props) {
           transition: 0.4s;s
         }
 
-      `}>
-    <div className="bar1"></div>
-    <div className="bar2"></div>
-    <div className="bar3"></div>
-  </div>
-
+      `}
+    >
+      <div className="bar1"></div>
+      <div className="bar2"></div>
+      <div className="bar3"></div>
+    </div>
   )
 }
 // export default ()=> (

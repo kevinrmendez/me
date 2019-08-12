@@ -1,6 +1,5 @@
 import React from "react"
-import {css} from '@emotion/core'
-
+import { css } from "@emotion/core"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,26 +12,30 @@ import {css} from '@emotion/core'
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Button = (props) => {
-
-
-  return <a className="button" css={css`
-    background: #fff;
-    max-width: 350px;
-    color: var(--bg-blue);
-    font-size: 23px;
-    padding: 10px 45px;
-    border-radius: 24px;
-    text-decoration: none;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    margin-bottom: 25px;
-    /* min-width: 215px; */
-    `}  href={props.href}  >
-        {props.value}
+const Button = props => {
+  return (
+    <a
+      className="button"
+      css={css`
+        background: #fff;
+        max-width: 350px;
+        color: var(--bg-blue);
+        font-size: 23px;
+        padding: 10px 45px;
+        border-radius: 24px;
+        text-decoration: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+        /* min-width: 215px; */
+      `}
+      href={props.href}
+      download={props.download}
+    >
+      {props.value}
     </a>
-
+  )
 }
 
 export default Button
