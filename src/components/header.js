@@ -45,7 +45,7 @@ function Header({ siteTitle }) {
             {siteTitle}
           </NavLink>
           <div onClick={() => setShow(!show)}>
-            <Menu class={show ? "active" : ""} />
+            <Menu active={show} />
           </div>
         </div>
         <div

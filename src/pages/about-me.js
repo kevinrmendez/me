@@ -24,6 +24,7 @@ import linkedin from "../images/in.png"
 import { Container, Row, Col } from "react-grid-system"
 import posed from "react-pose"
 
+import Content from "../components/content"
 import cv from "../assets/pdf/cv-mendez.pdf"
 
 export const data = graphql`
@@ -141,10 +142,12 @@ const AboutMe = ({ data }) => (
         value="Download from Git"
       />
     </div>
-    <p class="text-big text-center">
-      When I am not coding, I like to travel, play with my girlfriend's cats and
-      and learn new web technologies
-    </p>
+    <Content>
+      <p class="text-big text-center">
+        When I am not coding, I like to travel, watch netflix and learn new web
+        technologies
+      </p>
+    </Content>
     <img
       css={css`
         max-width: 600px;

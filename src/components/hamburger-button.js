@@ -4,7 +4,7 @@ import { css } from "@emotion/core"
 function Menu(props) {
   return (
     <div
-      className={props.class}
+      className={props.active ? "active" : ""}
       css={css`
         &{
           display: inline-block;
