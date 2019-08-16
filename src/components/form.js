@@ -2,6 +2,8 @@ import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
+import Input from "../components/input"
+
 const inputStyle = {
   border: "white",
   padding: "6px 24px",
@@ -22,18 +24,14 @@ export default () => (
   >
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="bot-field" />
-    <div>
-      <input type="text" name="name" id="name" placeholder="name" />
-    </div>
-    <div>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="email"
-        required
-      />
-    </div>
+    <Input type="text" name="name" id="name2" placeholder="name" />
+    <Input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="email"
+      required={true}
+    />
     <div>
       <textarea
         name="message"

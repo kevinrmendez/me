@@ -15,4 +15,5 @@ Content.propTypes = {
 Content.defaultProps = {
   title: "",
 }
+
 export default Content

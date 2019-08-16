@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 import Menu from "../components/hamburger-button"
 import styled from "@emotion/styled"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 const NavLink = styled(AniLink)`
   color: white;
@@ -25,6 +25,11 @@ const NavLink = styled(AniLink)`
 
 function Header({ siteTitle }) {
   const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    console.log(`Show state is ${show}`)
+  }, [])
+
   return (
     <header
       css={css`

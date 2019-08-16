@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
 import { css } from "@emotion/core"
 
-function Menu(props) {
+function Menu({ active }) {
   return (
     <div
-      className={props.active ? "active" : ""}
+      className={active ? "active" : ""}
       css={css`
         &{
           display: inline-block;

@@ -127,7 +127,6 @@ const Layout = ({ children }) => {
             display: block;
             width: 100%;
             margin-bottom: 1.5em;
-            color: var(--bg-blue);
             font-size: 20px;
             padding: 8px 17px;
           }
