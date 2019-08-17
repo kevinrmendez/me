@@ -42,6 +42,12 @@ function AnnoyingButton({ href, value }) {
           text-decoration: none;
           border-radius: 30px;
         }
+
+        @media (max-width: 768px) {
+          & {
+            display: none;
+          }
+        }
       `}
       id="annoying-button"
       href={href}
