@@ -26,6 +26,7 @@ function AnnoyingButton({ href, value }) {
   return (
     <a
       onMouseEnter={jump}
+      onTouchStart={jump}
       css={css`
         & {
           padding: 5px 35px;
