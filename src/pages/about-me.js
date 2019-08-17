@@ -23,6 +23,7 @@ import gitIcon from "../assets/git.svg"
 import linkedin from "../images/in.png"
 import { Container, Row, Col } from "react-grid-system"
 import posed from "react-pose"
+import AnnoyingButton from "../components/annoyingButton"
 
 import Content from "../components/content"
 import cv from "../assets/pdf/cv-mendez.pdf"
@@ -104,6 +105,7 @@ const AboutMe = ({ data }) => (
   <Layout>
     <SEO title="About me" />
     <h1>About me</h1>
+    <AnnoyingButton href={"/"} value={"try to press me"} />
     <p class="text-big text-center">
       I am a master degree student in Software Engineering at Oulu University in
       my last year of my studies
