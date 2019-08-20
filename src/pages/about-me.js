@@ -130,6 +130,15 @@ const AboutMe = ({ data }) => (
       `}
       src={junction2016}
     />
+    <p class="text-big text-center">
+      Since I am also interested in mobile development, I like to build apps in
+      android. At the moment I am playing around with flutter and it is so cool
+    </p>
+    <p class="text-big text-center"> Download my latest app from github</p>
+    <Button
+      href="https://github.com/kevinrmendez/myContacts"
+      value="download app"
+    />
     <div
       css={css`
         display: none;
