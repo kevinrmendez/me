@@ -19,6 +19,10 @@ import meSnow from "../images/meSnow.jpg"
 import reactJS from "../images/react.png"
 import reduxJS from "../images/redux.png"
 import vueJS from "../images/vue.png"
+import phpLogo from "../images/php.png"
+import wordpressLogo from "../images/wordpressLogo.png"
+import magentoLogo from "../images/magentoLogo.png"
+import gatsbyJS from "../images/gatsby-icon.png"
 import gitIcon from "../assets/git.svg"
 import linkedin from "../images/in.png"
 import { Container, Row, Col } from "react-grid-system"
@@ -189,6 +193,10 @@ const AboutMe = ({ data }) => (
           <IconWeb src={dartLogo} />
         </Col>
         <Col className="text-center">
+          <h3 className="white">PHP</h3>
+          <IconWeb src={phpLogo} />
+        </Col>
+        <Col className="text-center">
           <h3 className="white">Nodejs</h3>
           <IconWeb src={nodeLogo} />
         </Col>
@@ -218,6 +226,31 @@ const AboutMe = ({ data }) => (
         <Col className="text-center">
           <h3 className="white">Vue</h3>
           <IconWeb src={vueJS} />
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Gatsby</h3>
+          <IconWeb src={gatsbyJS} />
+        </Col>
+      </Row>
+      <Row justify="center" className="section">
+        <Col sm={12}>
+          <h3
+            css={css`
+              text-align: center;
+              font-size: 52px;
+              font-weight: 400;
+            `}
+          >
+            CMS
+          </h3>
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Wordpress</h3>
+          <IconWeb src={wordpressLogo} />
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Magento</h3>
+          <IconWeb src={magentoLogo} />
         </Col>
       </Row>
       <Row>
