@@ -14,6 +14,7 @@ import jsLogo from "../images/js.png"
 import dartLogo from "../images/dart.png"
 import nodeLogo from "../images/node.png"
 import junction2016 from "../images/junction_2016.jpg"
+import junction2017 from "../images/junction_2017.jpg"
 import uni from "../images/oulu_uni.png"
 import meSnow from "../images/meSnow.jpg"
 import reactJS from "../images/react.png"
@@ -21,6 +22,9 @@ import reduxJS from "../images/redux.png"
 import vueJS from "../images/vue.png"
 import phpLogo from "../images/php.png"
 import wordpressLogo from "../images/wordpressLogo.png"
+import javaLogo from "../images/javaLogo.png"
+import mongodbLogo from "../images/mongodb.png"
+import mysqlLogo from "../images/mysql.png"
 import magentoLogo from "../images/magentoLogo.png"
 import gatsbyJS from "../images/gatsby-icon.png"
 import gitIcon from "../assets/git.svg"
@@ -28,6 +32,7 @@ import linkedin from "../images/in.png"
 import { Container, Row, Col } from "react-grid-system"
 import posed from "react-pose"
 import AnnoyingButton from "../components/annoyingButton"
+import Flag from "../components/flag"
 
 import Content from "../components/content"
 import cv from "../assets/pdf/cv-mendez.pdf"
@@ -57,6 +62,25 @@ const Box = posed.div({
 const IconWeb = styled.img`
   max-width: 100px;
 `
+
+const IconWebWhite = ({ src }) => (
+  <div
+    css={css`
+      background: #fff;
+      border-radius: 50%;
+      max-width: 100px;
+      max-height: 100px;
+      margin: 0 auto;
+      padding: 10px;
+      & img {
+        width: 90%;
+        margin: 0 auto;
+      }
+    `}
+  >
+    <IconWeb src={src} />
+  </div>
+)
 const IconLink = props => (
   <Box className={props.class}>
     <a href={props.href}>
@@ -78,31 +102,6 @@ const ImgLink = props => (
       <img src={props.src} />
     </a>
   </Box>
-)
-
-const Flag = () => (
-  <div
-    css={css`
-      & {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-row-gap: 30px;
-        grid-column-gap: 30px;
-        height: 150px;
-        max-width: 300px;
-        margin: 0 auto;
-        margin-bottom: 25px;
-      }
-      & div {
-        background: #fff;
-      }
-    `}
-  >
-    <div />
-    <div />
-    <div />
-    <div />
-  </div>
 )
 
 const AboutMe = ({ data }) => (
@@ -127,13 +126,26 @@ const AboutMe = ({ data }) => (
     <p class="text-big text-center">
       I enjoy to participate in Hackathons, I have won 2 times at Junction
     </p>
-
-    <img
-      css={css`
-        max-width: 300px;
-      `}
-      src={junction2016}
-    />
+    <Container>
+      <Row>
+        <Col>
+          <img
+            css={css`
+              max-width: 300px;
+            `}
+            src={junction2016}
+          />
+        </Col>
+        <Col>
+          <img
+            css={css`
+              min-width: 300px;
+            `}
+            src={junction2017}
+          />
+        </Col>
+      </Row>
+    </Container>
     <p class="text-big text-center">
       Since I am also interested in mobile development, I like to build apps in
       android. At the moment I am playing around with flutter and it is so cool
@@ -191,6 +203,10 @@ const AboutMe = ({ data }) => (
         <Col className="text-center">
           <h3 className="white">Dart</h3>
           <IconWeb src={dartLogo} />
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Java</h3>
+          <IconWebWhite src={javaLogo} />
         </Col>
         <Col className="text-center">
           <h3 className="white">PHP</h3>
@@ -251,6 +267,29 @@ const AboutMe = ({ data }) => (
         <Col className="text-center">
           <h3 className="white">Magento</h3>
           <IconWeb src={magentoLogo} />
+        </Col>
+      </Row>
+
+      <Row justify="center" className="section">
+        <Col sm={12}>
+          <h3
+            css={css`
+              text-align: center;
+              font-size: 52px;
+              font-weight: 400;
+            `}
+          >
+            DB
+          </h3>
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">MYSQL</h3>
+
+          <IconWebWhite src={mysqlLogo} />
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Mongodb</h3>
+          <IconWeb src={mongodbLogo} />
         </Col>
       </Row>
       <Row>

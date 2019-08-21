@@ -24,8 +24,6 @@ const Dialog = props => {
           margin-right: 12px;
           padding: 31px 0px;
           top: 405px;
-          width: 75%;
-          left: 28px;
         }
       `}
     >
