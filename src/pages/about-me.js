@@ -293,6 +293,29 @@ const AboutMe = ({ data }) => (
         </Col>
       </Row>
       <Row>
+      <Row justify="center" className="section">
+        <Col sm={12}>
+          <h3
+            css={css`
+              text-align: center;
+              font-size: 52px;
+              font-weight: 400;
+            `}
+          >
+            Testing
+          </h3>
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Chai</h3>
+
+          
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Jest</h3>
+          
+        </Col>
+      </Row>
+      <Row>
         <Col sm={12}>
           <Button href={cv} value="download cv" download="true" />
         </Col>
