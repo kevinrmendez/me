@@ -29,7 +29,7 @@ const AboutMe = ({ data }) => (
   <Layout>
     <SEO title="Contact" />
 
-    <h1>Are you looking for a front end/web developer?</h1>
+    <h1>Are you looking for a web/mobile developer?</h1>
 
     <img
       className="codingLogo wobble-hor-bottom"

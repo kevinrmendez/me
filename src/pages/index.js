@@ -13,7 +13,7 @@ const IndexPage = () => (
 
     <TypeWriter
       className="front-page"
-      title="Kevin Mendez Front End Developer!"
+      title="Kevin Mendez Front End Software Developer!"
       speed={110}
     />
 
