@@ -292,7 +292,7 @@ const AboutMe = ({ data }) => (
           <IconWeb src={mongodbLogo} />
         </Col>
       </Row>
-      <Row>
+
       <Row justify="center" className="section">
         <Col sm={12}>
           <h3
@@ -307,12 +307,9 @@ const AboutMe = ({ data }) => (
         </Col>
         <Col className="text-center">
           <h3 className="white">Chai</h3>
-
-          
         </Col>
         <Col className="text-center">
           <h3 className="white">Jest</h3>
-          
         </Col>
       </Row>
       <Row>
