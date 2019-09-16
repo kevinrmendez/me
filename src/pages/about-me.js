@@ -148,13 +148,10 @@ const AboutMe = ({ data }) => (
     </Container>
     <p class="text-big text-center">
       Since I am also interested in mobile development, I like to build apps in
-      android. At the moment I am playing around with flutter and it is so cool. 
+      android. At the moment I am playing around with flutter.
     </p>
-    <p class="text-big text-center"> Download my latest flutter app from google play </p>
-    <Button
-      href="https://play.google.com/store/apps/details?id=com.kevinrmendez.contact_app"
-      value="download app"
-    />
+    <p class="text-big text-center">Check my published apps</p>
+    <Button href="/apps" value="download app" />
     <div
       css={css`
         display: none;

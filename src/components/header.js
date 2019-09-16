@@ -84,6 +84,15 @@ function Header({ siteTitle }) {
           >
             contact{" "}
           </NavLink>
+          <NavLink
+            cover
+            bg="#EEC643"
+            duration={1}
+            to="/apps"
+            activeClassName="current-page"
+          >
+            apps{" "}
+          </NavLink>
         </div>
       </nav>
     </header>
