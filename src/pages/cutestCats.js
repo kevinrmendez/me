@@ -19,14 +19,14 @@ export const data = graphql`
 
 const CutestCats = ({ data }) => (
   <Layout>
-    <SEO title="Cutest Cats Pictures Premium" />
+    <SEO title="Cutest Cats/ Cutest Cats Pictures Premium" />
     <div class="text-center">
       <h2
         css={css`
           font-size: 45px;
         `}
       >
-        Privacy policy Cutest Cats Pictures Premium
+        Privacy policy Cutest Cats/ Cutest Cats Pictures Premium
       </h2>
       <div
         css={css`
@@ -38,9 +38,9 @@ const CutestCats = ({ data }) => (
       >
         <h2>Privacy Policy</h2>{" "}
         <p>
-          Kevin Mendez built the Cutest Cats Pictures app as a Commercial app.
-          This SERVICE is provided by Kevin Mendez and is intended for use as
-          is.
+          Kevin Mendez built the Cutest Cats Pictures app as a Free
+          app/Commercial app. This SERVICE is provided by Kevin Mendez and is
+          intended for use as is.
         </p>{" "}
         <p>
           This page is used to inform visitors regarding my policies with the
