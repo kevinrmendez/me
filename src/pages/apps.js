@@ -165,6 +165,33 @@ const Apps = ({ data }) => (
         </h3>
       </Row>
       <Row justify="center" className="section">
+        <h3
+          css={css`
+            text-align: center;
+            font-size: 52px;
+            font-weight: 400;
+            color: white;
+          `}
+        >
+          For flutter developers ONLY
+        </h3>
+        <p
+          css={css`
+            text-align: center;
+            font-size: 32px;
+            font-weight: 400;
+            color: white;
+          `}
+        >
+          Checkout this flutter plugin I made for using bluetooth adapter on
+          flutter (Android only)
+        </p>
+        <Button
+          href="https://pub.dev/packages/flutter_bluetooth_adapter"
+          value="check plugin"
+        />
+      </Row>
+      <Row justify="center" className="section">
         <p class="text-big text-center">
           If you have any interesting app idea you would like to develop, let's
           keep in touch!
