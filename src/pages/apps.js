@@ -90,11 +90,11 @@ const Apps = ({ data }) => (
     <h1>Apps</h1>
     <AnnoyingButton href={"/"} value={"try to press me"} />
     <p class="text-big text-center">
-      Here are some apps that I have publish in google play.
+      Here you will find all the apps that I have publish in google play so far.
     </p>
     <ImgLink
       class="img-250"
-      href="https://play.google.com/store/apps/developer?id=kevinrmendez&hl=en_US"
+      href="https://play.google.com/store/apps/dev?id=6998861417324808293"
       src={googlePlay}
     />
     <p class="text-big text-center">
