@@ -13,6 +13,7 @@ import Icon from "../assets/git.svg"
 import googlePlay from "../images/google_play.png"
 import myContacts from "../images/myContacts.png"
 import goodBadJokes from "../images/smile-yellow.png"
+import myCocktailRecipes from "../images/myCocktailRecipes.png"
 import { Container, Row, Col } from "react-grid-system"
 import posed from "react-pose"
 import AnnoyingButton from "../components/annoyingButton"
@@ -150,6 +151,24 @@ const Apps = ({ data }) => (
             Good Bad Jokes is an app that will make you laugh! It contains a
             list of jokes that are so bad, that they will really make you laugh.
             It is perfect for any kind of person who wants to have a good time.
+          </p>
+        </Col>
+      </Row>
+      <Row justify="center" className="section">
+        <Col sm={12}></Col>
+        <Col className="text-center">
+          <h3 className="white">My Cocktail Recipes</h3>
+          <ImgLink
+            class="img-250"
+            href="https://play.google.com/store/apps/details?id=com.my.cocktail.recipes"
+            src={myCocktailRecipes}
+          />
+          <p
+            css={css`
+              font-size: 25px;
+            `}
+          >
+            Discover and try new cocktail recipes!
           </p>
         </Col>
       </Row>
