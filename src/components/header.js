@@ -57,40 +57,21 @@ function Header({ siteTitle }) {
           style={{ display: show ? "flex" : "flex" }}
           className={show ? "nav-links active" : "nav-links "}
         >
-          <NavLink
-            cover
-            bg="#EEC643"
-            duration={1}
-            to="/about-me"
-            activeClassName="current-page"
-          >
+          <NavLink to="/about-me" activeClassName="current-page">
             about me{" "}
           </NavLink>
           <NavLink
             className="site-title"
-            paintDrip
-            hex="#EEC643"
             fontWeight="bold"
             to="/"
             activeClassName="current-page"
           >
             {siteTitle}
           </NavLink>
-          <NavLink
-            paintDrip
-            hex="#EEC643"
-            to="/contact"
-            activeClassName="current-page"
-          >
+          <NavLink to="/contact" activeClassName="current-page">
             contact{" "}
           </NavLink>
-          <NavLink
-            cover
-            bg="#EEC643"
-            duration={1}
-            to="/apps"
-            activeClassName="current-page"
-          >
+          <NavLink to="/apps" activeClassName="current-page">
             apps{" "}
           </NavLink>
         </div>
