@@ -1,29 +1,53 @@
 /* colors variables */
 :root {
-  --blue: #2301AD;
-  --yellow: #EEC643;
-  --bg-blue: #1600C1;
-  --white: #FFF;
-  --dark-blue: #04034B;
+  --blue: #2301ad;
+  --yellow: #eec643;
+  --bg-blue: #1600c1;
+  --white: #fff;
+  --dark-blue: #04034b;
+}
+* {
+  font-family: "Roboto", Courier, monospace;
 }
 
-  .img-100 {
-    max-width: 100px;
-    margin:0 auto;
-  }
-  .img-250 {
-    max-width: 250px;
-    margin:0 auto;
-  }
+.title-big {
+  font-size: 6em;
+  margin-bottom: 20px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 2em;
+}
+.text-big {
+  font-size: 2em;
+}
 
-  @media only screen and (max-width: 768px) {
-    body main {
-          margin-top: 150px;
-    }
+.img-100 {
+  max-width: 100px;
+  margin: 0 auto;
+}
+.img-250 {
+  max-width: 250px;
+  margin: 0 auto;
+}
+footer {
+  background-color: var(--white);
+  padding-bottom: 50px;
+}
+footer a,
+footer p {
+  color: var(--bg-blue);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  body main {
+    margin-top: 150px;
   }
+}
 @media only screen and (max-width: 600px) {
   img.codingLogo {
-        width: 60vw;
-        margin: 50px auto;
+    width: 60vw;
+    margin: 50px auto;
   }
 }

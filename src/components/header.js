@@ -57,9 +57,6 @@ function Header({ siteTitle }) {
           style={{ display: show ? "flex" : "flex" }}
           className={show ? "nav-links active" : "nav-links "}
         >
-          <NavLink to="/about-me" activeClassName="current-page">
-            about me{" "}
-          </NavLink>
           <NavLink
             className="site-title"
             fontWeight="bold"
@@ -67,6 +64,9 @@ function Header({ siteTitle }) {
             activeClassName="current-page"
           >
             {siteTitle}
+          </NavLink>
+          <NavLink to="/about-me" activeClassName="current-page">
+            about me{" "}
           </NavLink>
           <NavLink to="/contact" activeClassName="current-page">
             contact{" "}

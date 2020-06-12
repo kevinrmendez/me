@@ -28,7 +28,6 @@ import mysqlLogo from "../images/mysql.png"
 import magentoLogo from "../images/magentoLogo.png"
 import gatsbyJS from "../images/gatsby-icon.png"
 import gitIcon from "../assets/git.svg"
-import linkedin from "../images/in.png"
 import { Container, Row, Col } from "react-grid-system"
 import posed from "react-pose"
 import AnnoyingButton from "../components/annoyingButton"
@@ -312,32 +311,6 @@ const AboutMe = ({ data }) => (
       <Row>
         <Col sm={12}>
           <Button href={cv} value="download cv" download="true" />
-        </Col>
-      </Row>
-
-      <Row justify="center" className="section">
-        <Col sm={12}>
-          <h3
-            css={css`
-              text-align: center;
-              font-size: 52px;
-              font-weight: 400;
-            `}
-          >
-            Check also
-          </h3>
-        </Col>
-        <Col className="text-center">
-          <h3 className="white">Github</h3>
-          <IconLink class="img-100" href="https://github.com/kevinrmendez" />
-        </Col>
-        <Col className="text-center">
-          <h3 className="white">Linkedin</h3>
-          <ImgLink
-            class="img-100"
-            href="https://www.linkedin.com/in/kevin-mendez-45723692/"
-            src={linkedin}
-          />
         </Col>
       </Row>
 

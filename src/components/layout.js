@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
           h2,
           h3 {
             line-height: 1.1;
-            color: var(--yellow);
+            color: var(--white);
             + * {
               margin-top: 0.5rem;
             }
@@ -68,40 +68,29 @@ const Layout = ({ children }) => {
               line-height: 40px;
             }
           }
-          .text-big {
-            font-size: 40px;
-            line-height: 1.5;
-          }
 
           h1 {
             /* color: rebeccapurple; */
-            color: var(--yellow);
+            color: var(--white);
             font-size: 50px;
             text-align: center;
             margin-top: 5%;
             margin-bottom: 10%;
-            font-family: "Roboto Condensed", sans-serif;
           }
+
           header {
             background-color: var(--bg-blue);
           }
-          main {
-            margin: 150px auto 4rem;
-          }
+
           main h1 {
             font-size: 60px;
             line-height: 1.5;
             padding-bottom: 20px;
-            border-bottom: 5px solid var(--yellow);
           }
           main .front-page h1 {
             min-height: 205px;
           }
-          footer a,
-          footer p {
-            color: var(--white);
-            font-size: 16px;
-          }
+
           .section {
             margin: 100px 0;
           }
@@ -166,19 +155,19 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          css={css`
-            text-align: center;
-          `}
-        >
-          <p>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </p>
-          <p>kevinrmendez</p>
-        </footer>
       </div>
+      <footer
+        css={css`
+          text-align: center;
+        `}
+      >
+        <p>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </p>
+        <p>kevinmendez</p>
+      </footer>
     </>
   )
 }

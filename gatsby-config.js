@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `kevinrmendez`,
+    title: `kevinmendez`,
     description: `personal website`,
-    author: `@kevinrmendez`,
-    siteUrl: `https://kevinrmendez.com`,
+    author: `@kevinmendez`,
+    siteUrl: `https://kevinmendez.dev`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -31,6 +31,10 @@ module.exports = {
         fonts: [
           {
             family: `Open Sans`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
             variants: [`400`, `700`],
           },
           {
