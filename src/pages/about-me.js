@@ -147,27 +147,13 @@ const AboutMe = ({ data }) => (
     </Container>
     <p class="text-big text-center">
       Since I am also interested in mobile development, I like to build apps in
-      android. At the moment I am playing around with flutter.
+      android. At the moment I use flutter and react native for building my apps
     </p>
-    <p class="text-big text-center">Check my published apps</p>
-    <Button href="/apps" value="download app" />
-    <div
-      css={css`
-        display: none;
-      `}
-    >
-      <p class="text-big text-center">
-        {" "}
-        I have also built a react native app of my girlfriends's cat Kuismelo
-      </p>
-      <Button
-        href="https://github.com/kevinrmendez/cat-caller"
-        value="Download from Git"
-      />
-    </div>
+    <Button href="/apps" value="Check apps" />
+
     <Content>
       <p class="text-big text-center">
-        When I am not coding, I like to travel, watch netflix and learn new web
+        When I am not coding, I like to travel, watch netflix and learn new
         technologies
       </p>
     </Content>

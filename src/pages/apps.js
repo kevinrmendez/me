@@ -93,10 +93,10 @@ const Apps = ({ data }) => (
     <p class="text-big text-center">
       Here you will find all the apps that I have publish in google play so far.
     </p>
-    <ImgLink
-      class="img-250"
+    <ImgLink class="img-250" href="" src={googlePlay} />
+    <Button
       href="https://play.google.com/store/apps/dev?id=6998861417324808293"
-      src={googlePlay}
+      value="check apps"
     />
     <p class="text-big text-center">
       I have use flutter while developing my latest app, but I also have

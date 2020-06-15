@@ -9,9 +9,13 @@
 * {
   font-family: "Roboto", Courier, monospace;
 }
-
+#footer-waves {
+  position: relative;
+  bottom: -13px;
+}
 .title-big {
-  font-size: 6em;
+  font-size: 7em;
+  line-height: 1.3em;
   margin-bottom: 20px;
 }
 .subtitle {
@@ -49,5 +53,8 @@ footer p {
   img.codingLogo {
     width: 60vw;
     margin: 50px auto;
+  }
+  .title-big {
+    font-size: 3em;
   }
 }
