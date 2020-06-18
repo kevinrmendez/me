@@ -65,14 +65,14 @@ function Header({ siteTitle }) {
           >
             {siteTitle}
           </NavLink>
-          <NavLink to="/about-me" activeClassName="current-page">
-            about me{" "}
-          </NavLink>
-          <NavLink to="/contact" activeClassName="current-page">
-            contact{" "}
+          <NavLink to="/about" activeClassName="current-page">
+            about{" "}
           </NavLink>
           <NavLink to="/apps" activeClassName="current-page">
             apps{" "}
+          </NavLink>
+          <NavLink to="/contact" activeClassName="current-page">
+            contact{" "}
           </NavLink>
         </div>
       </nav>

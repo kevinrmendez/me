@@ -34,6 +34,12 @@
   max-width: 250px;
   margin: 0 auto;
 }
+h4 {
+  font-size: 2em !important;
+  color: #fff !important;
+  text-align: center !important;
+  margin: 10px auto;
+}
 footer {
   background-color: var(--white);
   padding-bottom: 50px;

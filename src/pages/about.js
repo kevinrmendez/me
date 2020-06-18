@@ -103,7 +103,7 @@ const ImgLink = props => (
   </Box>
 )
 
-const AboutMe = ({ data }) => (
+const About = ({ data }) => (
   <Layout>
     <SEO title="About me" />
     <h1>About me</h1>
@@ -309,4 +309,4 @@ const AboutMe = ({ data }) => (
   </Layout>
 )
 
-export default AboutMe
+export default About
