@@ -96,8 +96,8 @@ const Apps = ({ data }) => (
     <SEO title="About me" />
     <h1>Apps</h1>
     <p class="text-big text-center">
-      I have use flutter while developing my latest app, but I also have
-      experience developing android apps using java
+      I have use flutter for developing my published apps, but I also have
+      experience developing mobile apps using android and react native.
     </p>
     <AnnoyingButton href={"/"} value={"try to press me"} />
     <p class="text-big text-center">
