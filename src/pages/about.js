@@ -109,8 +109,10 @@ const About = ({ data }) => (
     <h1>About me</h1>
     <AnnoyingButton href={"/"} value={"try to press me"} />
     <p class="text-big text-center">
-      I am a master degree student in Software Engineering at Oulu University in
-      my last year of my studies
+      I am a junior software developer, who enjoys working on transforming UI prototypes into functional apps 
+    </p>
+    <p class="text-big text-center">
+      I have a master degree student in Software Engineering at Oulu University
     </p>
     <ImgLink
       class="img-250"
@@ -118,8 +120,8 @@ const About = ({ data }) => (
       src={uni}
     />
     <p class="text-big text-center">
-      I have worked as a front end developer for 1 year at liana technologies,
-      but also I have done freelance projects for small companies in Finland
+      I have a wide range of experience working in different work environemnts in Finland, from small
+      startups to corporate companies. The among the industries I am interested in are Fintech and health tech.
     </p>
     <Flag />
     <p class="text-big text-center">
@@ -179,7 +181,7 @@ const About = ({ data }) => (
           </h3>
         </Col>
         <Col className="text-center">
-          <h3 className="white">Javascript</h3>
+          <h3 className="white">Javascript/Typescript</h3>
           <IconWeb src={jsLogo} />
         </Col>
         <Col className="text-center">
@@ -230,7 +232,7 @@ const About = ({ data }) => (
           <IconWeb src={gatsbyJS} />
         </Col>
       </Row>
-      <Row justify="center" className="section">
+      {/* <Row justify="center" className="section">
         <Col sm={12}>
           <h3
             css={css`
@@ -250,7 +252,7 @@ const About = ({ data }) => (
           <h3 className="white">Magento</h3>
           <IconWeb src={magentoLogo} />
         </Col>
-      </Row>
+      </Row> */}
 
       <Row justify="center" className="section">
         <Col sm={12}>
@@ -288,10 +290,10 @@ const About = ({ data }) => (
           </h3>
         </Col>
         <Col className="text-center">
-          <h3 className="white">Chai</h3>
+          <h3 className="white">unit testing</h3>
         </Col>
         <Col className="text-center">
-          <h3 className="white">Jest</h3>
+          <h3 className="white">end to end testing</h3>
         </Col>
       </Row>
       <Row>

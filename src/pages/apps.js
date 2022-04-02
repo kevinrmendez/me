@@ -96,12 +96,12 @@ const Apps = ({ data }) => (
     <SEO title="About me" />
     <h1>Apps</h1>
     <p class="text-big text-center">
-      I have use flutter for developing my published apps, but I also have
-      experience developing mobile apps using android and react native.
+      Currently I am using flutter for developing my published apps, but I also have built a couple of apps
+      mobile apps using android/kotlin and react native
     </p>
     <AnnoyingButton href={"/"} value={"try to press me"} />
     <p class="text-big text-center">
-      Here you will find all the apps that I have publish in google play so far.
+      Check my apps I have built so far!
     </p>
     <ImgIcon class="img-250" href="" src={googlePlay} />
     <Button
