@@ -121,7 +121,7 @@ const About = ({ data }) => (
     />
     <p class="text-big text-center">
       I have a wide range of experience working in different work environemnts in Finland, from small
-      startups to corporate companies. The among the industries I am interested in are Fintech and health tech.
+      startups to corporate companies. Among the industries I am interested in are Fintech and health tech.
     </p>
     <Flag />
     <p class="text-big text-center">

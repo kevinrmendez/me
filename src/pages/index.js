@@ -6,10 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-grid-system"
 import posed from "react-pose"
+import styled from "@emotion/styled"
 
 import linkedin from "../images/in.png"
 
 import Icon from "../assets/git.svg"
+
+import kevinMendezPicture from "../images/kevin_mendez.jpg"
 
 const Box = posed.div({
   hoverable: true,
@@ -29,6 +32,9 @@ const ImgLink = props => (
     </a>
   </Box>
 )
+const Section = styled.div`
+  margin: 100px 0;
+`
 
 const IconLink = props => (
   <Box className={props.class}>
@@ -56,21 +62,40 @@ const IndexPage = () => (
       speed={110}
     /> */}
     <h1 className="title-big">Kevin Mendez</h1>
-    <p className="subtitle">Front End Software Developer</p>
-    <Row justify="center" className="section">
-      <Col className="text-center">
-        <h3 className="white">Github</h3>
-        <IconLink class="img-100" href="https://github.com/kevinrmendez" />
-      </Col>
-      <Col className="text-center">
-        <h3 className="white">Linkedin</h3>
-        <ImgLink
-          class="img-100"
-          href="https://www.linkedin.com/in/kevin-mendez-45723692/"
-          src={linkedin}
+    <Row>
+      <Col>
+        <img
+          css={css`
+            width: 80%;
+          `}
+          src={kevinMendezPicture}
         />
       </Col>
+      <Col style={{ display: "flex", alignItems: "center" }}>
+        <h2 style={{ fontSize: "3em", textAlign: "center" }}>
+          Front End Software Developer
+        </h2>
+      </Col>
     </Row>
+    <Section>
+      <Col className="text-center">
+        <h3 className="subtitle">You can find me on</h3>
+      </Col>
+      <Row justify="center">
+        <Col className="text-center">
+          <h3 className="white">Github</h3>
+          <IconLink class="img-100" href="https://github.com/kevinrmendez" />
+        </Col>
+        <Col className="text-center">
+          <h3 className="white">Linkedin</h3>
+          <ImgLink
+            class="img-100"
+            href="https://www.linkedin.com/in/kevin-mendez-45723692/"
+            src={linkedin}
+          />
+        </Col>
+      </Row>
+    </Section>
 
     <div
       css={css`
